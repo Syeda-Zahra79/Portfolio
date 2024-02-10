@@ -31,7 +31,6 @@ export default function Home() {
         //yoyoEase: "elastic.out(.3, 1)"
       }
     );
-    //gsap.fromTo(".move", { y: -500, duration: 2, repeat: -1 });
   }, []);
   return (
     <main className="w-[100%] lg:w-[80%]  flex justify-end ">
@@ -43,10 +42,9 @@ export default function Home() {
       <section className="w-[90%] mx-auto 2xl:pt-[12%] 2xl:w-[70%] lg:w-[75%] lg:mr-0 pt-20 overflow-y-hidden text-center lg:text-left">
         <p className="text-xl pl-1">Hi, I am</p>
         <div>
-          <h1 className="text-3xl xl:text-6xl mb-2 overflow-hidden px-0 roboto_condensed font-semibold">
+          <h1 className="text-3xl xl:text-6xl mb-2 overflow-hidden px-0 font-robotoCondensed font-semibold">
             Bint-e-Zahra<span>.</span>
           </h1>
-          {/* <Image src={pigeon} alt="Pigeon" width={20} height={20} className="scale-x-[-1] absolute top-[11rem]" /> */}
         </div>
         <div
           className="w-[90%] text-xl text-[#000000] opacity-70 spacing_5 mt-5 mb-7 pl-1">

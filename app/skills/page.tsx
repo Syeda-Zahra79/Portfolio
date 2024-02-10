@@ -55,6 +55,26 @@ export default function page() {
 
           <div className="flex justify-center flex-col items-center mx-6 lg:mr-12 lg:ml-0 my-4 ">
             <Image
+              src="/javascript.svg"
+              alt="Javascript"
+              width={50}
+              height={50}
+            />
+            <label className="lg:hidden">JavaScript</label>
+          </div>
+
+          <div className="flex justify-center flex-col items-center mx-6 lg:mr-12 lg:ml-0 my-4 ">
+            <Image
+              src="/typescript.svg"
+              alt="Typescript"
+              width={40}
+              height={40}
+            />
+            <label className="lg:hidden">HTML</label>
+          </div>
+
+          <div className="flex justify-center flex-col items-center mx-6 lg:mr-12 lg:ml-0 my-4 ">
+            <Image
               src="/react.svg"
               alt="React"
               width={50}
@@ -75,30 +95,10 @@ export default function page() {
 
           <div className="flex justify-center flex-col items-center mx-6 lg:mr-12 lg:ml-0 my-4 ">
             <Image
-              src="/javascript.svg"
-              alt="Javascript"
-              width={50}
-              height={50}
-            />
-            <label className="lg:hidden">JavaScript</label>
-          </div>
-
-          <div className="flex justify-center flex-col items-center mx-6 lg:mr-12 lg:ml-0 my-4 ">
-            <Image
-              src="/typescript.svg"
-              alt="Javascript"
-              width={50}
-              height={50}
-            />
-            <label className="lg:hidden">HTML</label>
-          </div>
-
-          <div className="flex justify-center flex-col items-center mx-6 lg:mr-12 lg:ml-0 my-4 ">
-            <Image
               src="/angular.svg"
               alt="Angular"
-              width={70}
-              height={30}
+              width={60}
+              height={60}
             />
             <label className="lg:hidden">Angular</label>
           </div>
