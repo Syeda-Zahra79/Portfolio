@@ -30,17 +30,14 @@ export default function Contact() {
 }, [name, message])
 
   return (
-    <main className="w-[100%] lg:w-[80%] flex justify-end border border-pink-800">
-      <div className="overflow-hidden h-[100%] 2xl:-left-[32rem] absolute top-0 -z-50 border border-green-800 w-fit">
+    <main className="w-[100%] lg:w-[80%] flex justify-end">
+      <div className="overflow-hidden h-[100%] 2xl:-left-[32rem] absolute top-0 -z-50 w-fit">
         <h1 className="move font-archivo text-black opacity-[0.07] text-9xl relative -left-20 2xl:-left-60 overflow-y-hidden -rotate-90 whitespace-nowrap">
           Contact.Contact.Contact.{" "}
         </h1>
       </div>
-      {/* <section className="w-[70%] pt-20 mb-20 border border-pink-800"> */}
       <section className="w-[90%] mx-auto 2xl:pt-[12%] 2xl:w-[70%] lg:w-[75%] pt-16 lg:pt-20 mb-20 lg:mr-0">
-        {/* <section className="w-[70vw] mx-auto my-20"> */}
 
-        {/* <SidePanel /> */}
         <h1 className="text-4xl text-center lg:text-left lg:text-6xl mb-2 overflow-y-hidden font-robotoCondensed  font-semibold">
           Contact.
         </h1>

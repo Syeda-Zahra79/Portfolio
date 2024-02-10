@@ -30,7 +30,6 @@ export default function page() {
           Skills.Skills.Skills.
         </h1>
       </div>
-      {/* <section className="w-[62vw] ml-5 pt-20 my-20 border border-pink-800"> */}
       <section className="flex flex-wrap w-[90%] 2xl:pt-[12%] 2xl:w-[70%] lg:w-[75%] pt-16 lg:pt-20 pl-6 mx-auto lg:mr-0 ">
         <h1 className="text-4xl text-center w-[100%] lg:text-left font-robotoCondensed font-semibold lg:text-6xl overflow-y-hidden">
           Skills.

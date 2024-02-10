@@ -34,7 +34,6 @@ export default function about() {
         <h1 className="text-4xl xl:text-6xl mb-2 overflow-hidden px-0 font-robotoCondensed font-semibold">
           About Me<span>.</span>
         </h1>
-        {/* <Image src={pigeon} alt="Pigeon" width={20} height={20} className="scale-x-[-1] absolute top-[11rem]" /> */}
         <div
           className="w-[90%] text-xl 
        text-[#000000] opacity-70 spacing_5 mt-8 lg:mt-5 mb-10 lg:mb-7 pl-1">
