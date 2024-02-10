@@ -35,8 +35,7 @@ export default function about() {
           About Me<span>.</span>
         </h1>
         <div
-          className="w-[90%] text-xl 
-       text-[#000000] opacity-70 spacing_5 mt-8 lg:mt-5 mb-10 lg:mb-7 pl-1">
+          className="w-[90%] text-xl text-[#000000] opacity-70 spacing_5 mt-8 lg:mt-5 mb-10 lg:mb-7 pl-1" >
           <p>
             Greetings! I'm Bint-e-Zahra, an enthusiastic{" "}
             <span className="font-semibold">Front-end Developer</span> based in{" "}

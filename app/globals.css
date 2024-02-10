@@ -49,19 +49,6 @@ body {
     scale: 2.5;
   }
 
-  .outerAnimation {
-    height: 100%;
-    width: 100%;
-    background-color: #f371d7;
-    clip-path: circle(0px at 60px 60px);
-  }
-
-/* .font-archivo {
-  font-family: 'Archivo Black', sans-serif;
-}
-.font-roboto {
-  font-family: 'Roboto Condensed', sans-serif;
-} */
 .bg_blur {
    background: rgba(240, 240, 240, 0.5);
   backdrop-filter: blur(15px);

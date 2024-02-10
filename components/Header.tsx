@@ -44,14 +44,13 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="my-10 lg:border lg:border-gray-950 rounded-full w-full lg:w-[85vw] mx-auto h-16 lg:px-16 py-2 flex justify-between pl-9">
+    <header className="my-10 lg:border lg:border-gray-950 rounded-full w-full lg:w-[85vw] mx-auto h-16 2xl:h-20 lg:px-16 py-2 flex justify-between pl-9">
       <Image
         src={pigeon}
         alt="Pigeon that represents Freedom"
         width={40}
         height={10}
       />
-      {/* <img src="/menu.png" alt="Menu" /> */}
 
       <Image
         src={menu}
@@ -63,9 +62,8 @@ export default function Header() {
       />
 
       {menuOpen && (
-        <div className="outerAnimation w-[100%] h-[100%] bg-gray-900 absolute top-0 left-0 z-50
-        ">
-        {/* <div className="w-full h-[100vh]  bg-[#F0F0F0] overflow-y-hidden fixed z-50 text-gray-950 top-0 left-0 flex flex-col justify-center">
+  
+         <div className="w-full h-[100vh]  bg-[#F0F0F0] overflow-y-hidden fixed z-50 text-gray-950 top-0 left-0 flex flex-col justify-center">
           <button className="absolute top-5 right-6">
             <Image src={'./close.svg'} alt="" width={50} height={50} className="opacity-[0.7]"   onClick={() => setMenuOpen(false)} />
           </button>
@@ -90,13 +88,12 @@ export default function Header() {
             </div>
             
           </nav>
-        </div> */}
         </div>
       )}
 
       <nav className="hidden lg:flex items-center text-lg">
         {navlinks.map((item: { text: string; href: string }) => (
-          <li className="list-none px-8">
+          <li className="list-none px-8 2xl:text-xl">
             <Link href={item.href}>{item.text}</Link>
           </li>
         ))}

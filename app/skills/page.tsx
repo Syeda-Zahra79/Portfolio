@@ -11,11 +11,11 @@ export default function page() {
     gsap.fromTo(
       ".move",
       {
-        y: -500,
+        y: -300,
       },
       {
-        y: 500,
-        duration: 3,
+        y: 800,
+        duration:3,
         ease: "none",
         repeat: -1,
         yoyo: true,
@@ -25,8 +25,8 @@ export default function page() {
   }, []);
   return (
     <main className="w-[100%] lg:w-[80%] flex justify-end overflow-y-hidden">
-      <div className="overflow-hidden h-[100%] absolute top-0  -z-50">
-        <h1 className="move font-archivo text-black opacity-[0.07] text-9xl relative -left-[22rem] overflow-y-hidden -rotate-90 whitespace-nowrap">
+      <div className="overflow-hidden h-[100%] 2xl:-left-[15rem] absolute top-0 -z-50">
+        <h1 className="move font-archivo text-black opacity-[0.07] text-9xl relative -left-[22rem] 2xl:-left-60 overflow-y-hidden -rotate-90 whitespace-nowrap">
           Skills.Skills.Skills.
         </h1>
       </div>
@@ -38,7 +38,7 @@ export default function page() {
 
 
           <div className="flex justify-center flex-col items-center mx-6 lg:mr-12 lg:ml-0 my-4 ">
-            <Image src="/html.svg" alt="HTML" width={50} height={50} />
+            <Image src="/html.svg" alt="HTML" width={50} height={50} className="2xl:w-[5rem] 2xl:h-auto" />
             <label className="lg:hidden">HTML</label>
           </div>
 
@@ -48,7 +48,8 @@ export default function page() {
               alt="CSS"
               width={50}
               height={50}
-            />
+             className="2xl:w-[5rem] 2xl:h-auto"
+             />
             <label className="lg:hidden">CSS</label>
           </div>
 
@@ -58,7 +59,8 @@ export default function page() {
               alt="Javascript"
               width={50}
               height={50}
-            />
+             className="2xl:w-[5rem] 2xl:h-auto"
+             />
             <label className="lg:hidden">JavaScript</label>
           </div>
 
@@ -68,7 +70,8 @@ export default function page() {
               alt="Typescript"
               width={40}
               height={40}
-            />
+             className="2xl:w-16 2xl:h-auto"
+             />
             <label className="lg:hidden">HTML</label>
           </div>
 
@@ -78,7 +81,8 @@ export default function page() {
               alt="React"
               width={50}
               height={5}
-            />
+             className="2xl:w-[5rem] 2xl:h-auto"
+             />
             <label className="lg:hidden">React</label>
           </div>
 
@@ -88,7 +92,8 @@ export default function page() {
               alt="NextJS"
               width={50}
               height={50}
-            />
+             className="2xl:w-[5rem] 2xl:h-auto"
+             />
             <label className="lg:hidden">NextJS</label>
           </div>
 
@@ -98,7 +103,8 @@ export default function page() {
               alt="Angular"
               width={60}
               height={60}
-            />
+             className="2xl:w-[5rem] 2xl:h-auto"
+             />
             <label className="lg:hidden">Angular</label>
           </div>
 
@@ -108,7 +114,8 @@ export default function page() {
               alt="Redux"
               width={40}
               height={40}
-            />
+             className="2xl:w-16 2xl:h-auto"
+             />
             <label className="lg:hidden">Redux</label>
           </div>
 
@@ -118,7 +125,8 @@ export default function page() {
               alt="TailwindCSS"
               width={50}
               height={50}
-            />
+             className="2xl:w-[5rem] 2xl:h-auto"
+             />
             <label className="lg:hidden">TaiwindCSS</label>
           </div>
 
@@ -128,7 +136,8 @@ export default function page() {
               alt="Zustand"
               width={70}
               height={60}
-            />
+             className="2xl:w-[7rem] 2xl:h-auto"
+             />
             <label className="lg:hidden">Zustand</label>
           </div>
 
@@ -138,7 +147,8 @@ export default function page() {
               alt="jQuery"
               height={40}
               width={40}
-            />
+             className="2xl:w-16 2xl:h-auto"
+             />
             <label className="lg:hidden">jQuery</label>
           </div>
 
@@ -148,7 +158,8 @@ export default function page() {
               alt="Firebase"
               width={50}
               height={40}
-            />
+             className="2xl:w-[5rem] 2xl:h-auto"
+             />
             <label className="lg:hidden">Firebase</label>
           </div>
 
@@ -158,7 +169,8 @@ export default function page() {
               alt="ThreeJs"
               width={50}
               height={30}
-            />
+             className="2xl:w-[5rem] 2xl:h-auto"
+             />
             <label className="lg:hidden">ThreeJS</label>
           </div>
 
@@ -168,7 +180,8 @@ export default function page() {
               alt="Bootstrap"
               width={50}
               height={50}
-            />
+             className="2xl:w-[5rem] 2xl:h-auto"
+             />
             <label className="lg:hidden">Bootstrap</label>
           </div>
 
@@ -178,7 +191,8 @@ export default function page() {
               alt="Oracle"
               width={70}
               height={70}
-            />
+             className="2xl:w-[5rem] 2xl:h-auto"
+             />
             <label className="lg:hidden">Oracle</label>
           </div>
 
@@ -188,7 +202,8 @@ export default function page() {
               alt="MySQL"
               width={50}
               height={50}
-            />
+             className="2xl:w-[5rem] 2xl:h-auto"
+             />
             <label className="lg:hidden">MySQL</label>
           </div>
 
@@ -199,6 +214,7 @@ export default function page() {
               width={50}
               height={50}
               aria-label="Styled-Components"
+              className="2xl:w-[5rem] 2xl:h-auto"
             />
             <label className="lg:hidden">Styled Components</label>
           </div>

@@ -38,7 +38,7 @@ export default function Contact() {
       </div>
       <section className="w-[90%] mx-auto 2xl:pt-[12%] 2xl:w-[70%] lg:w-[75%] pt-16 lg:pt-20 mb-20 lg:mr-0">
 
-        <h1 className="text-4xl text-center lg:text-left lg:text-6xl mb-2 overflow-y-hidden font-robotoCondensed  font-semibold">
+        <h1 className="text-4xl text-center lg:text-left lg:text-6xl mb-2 overflow-y-hidden font-robotoCondensed font-semibold">
           Contact.
         </h1>
         <p className="text-lg mt-7 lg:text-xl w-[100%]">
@@ -48,7 +48,7 @@ export default function Contact() {
         <input
           type="text"
           value={name}
-          className="w-[100%] lg:w-[75%] border border-gray-600 rounded-sm p-2 outline-none bg-transparent"
+          className="w-[100%] lg:w-[75%] border border-gray-600 rounded-sm p-2 outline-none bg-transparent text-xl"
           onChange={(e) => setName(e.target.value)}
         />
         <p className="mt-7 font-light text-xl">Message</p>
@@ -57,7 +57,7 @@ export default function Contact() {
           rows={6}
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          className="w-[100%] lg:w-[75%] border border-gray-600 rounded-sm p-2 outline-none bg-transparent"></textarea>
+          className="w-[100%] lg:w-[75%] border border-gray-600 rounded-sm p-2 outline-none bg-transparent text-xl"></textarea>
         <Link
           target="_blank"
           href={`https://mail.google.com/mail/?view=cm&fs=1&to=zahrapicho@gmail.com&su=Let's%20Connect%20:%20${name}&body=${message}`}

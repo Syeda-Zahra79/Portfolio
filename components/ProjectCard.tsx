@@ -10,23 +10,14 @@ const ProjectCard = ({project} : any) => {
       <VideoPlayer src={project.url} />
       {/* Content */}
       <div className="px-5">
-        <h3 className="font-nunito my-2 text-2xl">{project.name}</h3>
-        <p className="text-sm">{project.shortDescription}</p>
-        <div className="flex w-full gap-1 my-5 flex-wrap lg:flex-nowrap">
+        <h3 className="font-nunito my-2 text-2xl 2xl:text-3xl">{project.name}</h3>
+        <p className="text-sm 2xl:text-xl">{project.shortDescription}</p>
+        <div className="flex w-full gap-1 my-5 flex-wrap lg:flex-nowrap 2xl:gap-2">
           {project.techStack.map((stackItem: string, index: number) => (
-            <p className="border border-gray-950 rounded-full h-fit py-0.5 px-2 w-fit text-sm" key={index}>
+            <p className="border border-gray-950 rounded-full h-fit py-0.5 px-2 w-fit text-sm 2xl:text-xl" key={index}>
               {stackItem}
             </p>
           ))}
-          {/* <p className="border border-gray-950 rounded-full h-fit py-0.5 px-2 w-fit">
-            TS
-          </p>
-          <p className="border border-gray-950 rounded-full h-fit py-0.5 px-2 w-fit">
-            Resend
-          </p>
-          <p className="border border-gray-950 rounded-full h-fit py-0.5 px-2 w-fit whitespace-nowrap">
-            Styled Components
-          </p> */}
         </div>
       </div>
     </Link>
