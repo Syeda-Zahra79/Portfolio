@@ -1,113 +1,67 @@
-import Image from 'next/image'
+"use client";
+import Image from "next/image";
+import Link from "next/link";
+import pigeon from "../public/pigeon.png";
+import SidePanel from "@/components/SidePanel";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 export default function Home() {
+  useGSAP(() => {
+    gsap.fromTo(
+      ".move",
+      {
+        //  Starting values
+        // x: -500,
+        y: -500,
+      },
+      {
+        // Ending values
+        //x: 100,
+        y: 500,
+        duration: 6, // Duration of the animation in seconds
+        ease: "none",
+        // ease: "power2.out", // Easing function (optional)
+        repeat: -1, // Number of times to repeat the animation
+        yoyo: true,
+        //yoyoEase: "bounce.out"
+
+        //yoyoEase: "back.out(1.7)"
+        // yoyoEase: "power1.inOut"
+        //yoyoEase: "elastic.out(.3, 1)"
+      }
+    );
+    //gsap.fromTo(".move", { y: -500, duration: 2, repeat: -1 });
+  }, []);
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="w-[100%] lg:w-[80%]  flex justify-end ">
+      <div className="hidden h-[100%] absolute top-0 -z-50 overflow-y-hidden lg:block">
+        <h1 className="move font-archivo text-black opacity-[0.07] text-9xl relative left-7 overflow-y-hidden -rotate-90 whitespace-nowrap">
+          Welcome.Welcome.Welcome.{" "}
+        </h1>
+      </div>
+      <section className="w-[90%] mx-auto 2xl:pt-[12%] 2xl:w-[70%] lg:w-[75%] lg:mr-0 pt-20 overflow-y-hidden text-center lg:text-left">
+        <p className="text-xl pl-1">Hi, I am</p>
+        <div>
+          <h1 className="text-3xl xl:text-6xl mb-2 overflow-hidden px-0 roboto_condensed font-semibold">
+            Bint-e-Zahra<span>.</span>
+          </h1>
+          {/* <Image src={pigeon} alt="Pigeon" width={20} height={20} className="scale-x-[-1] absolute top-[11rem]" /> */}
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
+        <div
+          className="w-[90%] text-xl text-[#000000] opacity-70 spacing_5 mt-5 mb-7 pl-1">
+          <p>
+            Self-taught Front-end Developer aim to help people by escalating the{" "}
+            <span className="font-semibold">accessibility</span> of Web
+            Experiences. Thrilled to explore new things and bring unrealistic
+            world to <span className="font-semibold">realistic</span> world.
           </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+        </div>
+        <Link href={"/about"} className="text-xl text-[#1f1e1e] pl-1">
+          <span className="hover:underline pr-4">Get to know me</span>
+          <span className="text-4xl text-black opacity-70 ">&#8594;</span>
+        </Link>
+      </section>
     </main>
-  )
+  );
 }

@@ -1,8 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:wght@400;500;600;700;800&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Archivo+Black%display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap'); */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
+
+  * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+  font-family: 'Poppins', sans-serif;
+/* font-family: 'Roboto Condensed', sans-serif; */
+}
+
+/* font-family: 'Archivo Black', sans-serif; */
+body {
+  height: 100vh;
+  /* overflow-y: hidden; */
+}
+
+
+  .circle {
+    --circle-size: 40px;
+    position: fixed;
+    height: var(--circle-size);
+    width: var(--circle-size);
+    border: 1px solid white;
+    border-radius: 100%;
+    top: calc(var(--circle-size) / 2 * -1);
+    left: calc(var(--circle-size) / 2 * -1);
+    pointer-events: none;
+    z-index: 1000;;
+  }
+
+  .menu_scale {
+    width: auto;
+    scale: 0.5;
+  }
+ 
+  .line_scale{
+    width: auto;
+    scale: 2.5;
+  }
+
+  .outerAnimation {
+    height: 100%;
+    width: 100%;
+    background-color: #f371d7;
+    clip-path: circle(0px at 60px 60px);
+  }
+
+/* .font-archivo {
+  font-family: 'Archivo Black', sans-serif;
+}
+.font-roboto {
+  font-family: 'Roboto Condensed', sans-serif;
+} */
+.bg_blur {
+   background: rgba(240, 240, 240, 0.5);
+  backdrop-filter: blur(15px);
+  /* opacity: .2;  */
+  /* filter: blur(5px); */
+}
+
+.border_blur_1 {
+  /* border: 1em solid rgba(0,0,0,.2);
+  border-radius: 1em; */
+  /* box-shadow: 0px 0px 40px 40px #000000; */
+  box-shadow: 0px 0px 40px 40px #f5ce67; 
+}
+
+.border_blur_2 {
+  box-shadow: 0px 0px 40px 40px #ff8e8e; 
+}
+
+.border_blur_3 {
+  box-shadow: 0px 0px 40px 40px #95cbea; 
+}
+
+.border_blur_4 {
+  box-shadow: 0px 0px 40px 40px #85f5c6; 
+}
+
+.border_blur_5 {
+  box-shadow: 0px 0px 40px 40px #f371d7; 
+}
+
+.spacing_5 {
+  word-spacing: 5px;
+}
+
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -24,4 +118,5 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
+

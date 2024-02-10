@@ -7,6 +7,11 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    fontFamily: {
+      'archivo': ['"Archivo Black"'],
+      'robotoCondensed': ['"Roboto Condensed"'],
+       // Ensure fonts with spaces have " " surrounding it.
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
