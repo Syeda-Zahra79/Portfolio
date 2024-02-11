@@ -46,7 +46,7 @@ export default function about() {
             <span className="font-semibold">travel</span>.
           </p>
         </div>
-        <Link target="_blank" href={"/hci-2.pdf"} className="lg:text-xl text-[#1f1e1e] text-2xl lg:pl-1">
+        <Link target="_blank" href={"/resume.pdf"} className="lg:text-xl text-[#1f1e1e] text-2xl lg:pl-1">
           <span className="hover:underline pr-4">Resume</span>
           <span className="text-4xl text-black opacity-70 ">&#8594;</span>
         </Link>

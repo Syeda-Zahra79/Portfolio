@@ -11,7 +11,7 @@ function SidePanel() {
   
   </div>
       <div className="relative ml-[28%] w-64 h-64 mt-8 2xl:w-96 2xl:h-96 2xl:ml-[20%]">
-        <Link href="https://www.linkedin.com/in/bint-e-zahra-sajid-hussain-43a173285/">
+        <Link target="_blank" href="https://www.linkedin.com/in/bint-e-zahra-sajid-hussain-43a173285/">
           <Image
             src="/linkedin.svg"
             alt="LinkedIn Icon"
@@ -20,7 +20,7 @@ function SidePanel() {
             className="-rotate-90 opacity-60 2xl:w-8"
           />
         </Link>
-        <Link href="https://github.com/Syeda-Zahra79">
+        <Link target="_blank" href="https://github.com/Syeda-Zahra79">
           <Image
             src="/github.svg"
             alt="Github Icon"
@@ -29,7 +29,7 @@ function SidePanel() {
             className="-rotate-90 opacity-60 mt-4 2xl:w-8"
           />
         </Link>
-        <Link href="/hci-2.pdf" target="_blank">
+        <Link href="/resume.pdf" target="_blank">
           <Image
             width="20"
             height="25"

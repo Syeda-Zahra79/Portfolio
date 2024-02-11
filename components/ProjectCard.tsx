@@ -1,11 +1,7 @@
 import dynamic from "next/dynamic";
 import Link from "next/link";
-// import VideoPlayer from "./VideoPlayer";
+import VideoPlayer from "./VideoPlayer";
 
-
-const VideoPlayer = dynamic(() => import("@/components/VideoPlayer"), {
-  ssr: false,
-});
 
 const ProjectCard = ({project} : any) => {
   return (
