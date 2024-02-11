@@ -11,15 +11,14 @@ export default function page() {
     gsap.fromTo(
       ".move",
       {
-        y: -300,
+        y: -500,
       },
       {
-        y: 800,
-        duration:3,
+        y: 500,
+        duration:6,
         ease: "none",
         repeat: -1,
         yoyo: true,
-        yoyoEase: "bounce.out",
       }
     );
   }, []);

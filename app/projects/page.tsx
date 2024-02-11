@@ -21,11 +21,10 @@ export default function Projects() {
       },
       {
         y: 500,
-        duration: 5,
+        duration: 6,
         ease: "none",
         repeat: -1,
         yoyo: true,
-        yoyoEase: "bounce.out"
       }
     );
  }, []);

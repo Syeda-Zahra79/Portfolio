@@ -9,15 +9,14 @@ export default function about() {
     gsap.fromTo(
       ".move",
       {
-        y: 400,
+        y: -500,
       },
       {
-        y: -100,
-        duration: 3,
+        y: 500,
+        duration: 6,
         ease: "none",
         repeat: -1, 
         yoyo: true,
-        yoyoEase: "bounce.out"
       },
     );
  }, []);
@@ -47,7 +46,7 @@ export default function about() {
             <span className="font-semibold">travel</span>.
           </p>
         </div>
-        <Link href={"/projects"} className="lg:text-xl text-[#1f1e1e] text-2xl lg:pl-1">
+        <Link target="_blank" href={"/hci-2.pdf"} className="lg:text-xl text-[#1f1e1e] text-2xl lg:pl-1">
           <span className="hover:underline pr-4">Resume</span>
           <span className="text-4xl text-black opacity-70 ">&#8594;</span>
         </Link>

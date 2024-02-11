@@ -11,24 +11,14 @@ export default function Home() {
     gsap.fromTo(
       ".move",
       {
-        //  Starting values
-        // x: -500,
         y: -500,
       },
       {
-        // Ending values
-        //x: 100,
         y: 500,
-        duration: 6, // Duration of the animation in seconds
+        duration: 6,
         ease: "none",
-        // ease: "power2.out", // Easing function (optional)
-        repeat: -1, // Number of times to repeat the animation
+        repeat: -1,
         yoyo: true,
-        //yoyoEase: "bounce.out"
-
-        //yoyoEase: "back.out(1.7)"
-        // yoyoEase: "power1.inOut"
-        //yoyoEase: "elastic.out(.3, 1)"
       }
     );
   }, []);

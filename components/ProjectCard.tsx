@@ -1,14 +1,17 @@
+import dynamic from "next/dynamic";
 import Link from "next/link";
-import VideoPlayer from "./VideoPlayer";
+// import VideoPlayer from "./VideoPlayer";
 
+
+const VideoPlayer = dynamic(() => import("@/components/VideoPlayer"), {
+  ssr: false,
+});
 
 const ProjectCard = ({project} : any) => {
   return (
     <div className="w-[85%] mx-auto lg:ml-0 lg:mr-0 lg:w-[47%] mt-10 pb-5 bg-[#e0dddd] drop-shadow-lg transition-all lg:hover:scale-[1.04]">
       <Link href={`/projects/${project.name}`}>
-      {/* VideoContainer */}
       <VideoPlayer src={project.url} />
-      {/* Content */}
       <div className="px-5">
         <h3 className="font-nunito my-2 text-2xl 2xl:text-3xl">{project.name}</h3>
         <p className="text-sm 2xl:text-xl">{project.shortDescription}</p>

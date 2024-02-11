@@ -12,15 +12,14 @@ export default function Contact() {
     gsap.fromTo(
       ".move",
       {
-        y: -100,
+        y: -500,
       },
       {
-        y: 800,
-        duration: 4,
+        y: 500,
+        duration: 6,
         ease: "none",
         repeat: -1,
         yoyo: true,
-        yoyoEase: "bounce.out",
       }
     );
   }, []);

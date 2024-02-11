@@ -25,14 +25,13 @@ function page() {
     gsap.fromTo(
       ".move",
       {
-        y: -100,
+        y: -500,
       },
       {
-        y: 800,
-        duration: 4,
+        y: 500,
+        duration: 6,
         repeat: -1,
         yoyo: true,
-        yoyoEase: "bounce.out",
       }
     );
   }, []);
@@ -40,7 +39,7 @@ function page() {
   return (
     <section className="w-[100%] lg:w-[80%] 2xl:pt-[5%] 2xl:w-[70%] px-1 mx-auto overflow-y-hidden flex justify-end">
       <div className="overflow-hidden h-[100%]  2xl:-left-[32rem] absolute top-0 right-28 -z-50">
-        <h1 className="move font-archivo text-black opacity-[0.07] text-9xl relative -left-[5%] xl:-left-[17%] 2xl:-left-[25%] overflow-y-hidden -rotate-90 whitespace-nowrap">
+        <h1 className="move font-archivo text-black opacity-[0.07] text-9xl relative -left-[5%] xl:-left-[15%] 2xl:-left-[25%] overflow-y-hidden -rotate-90 whitespace-nowrap">
           {project.name}.{project.name}.{project.name}.
         </h1>
       </div>

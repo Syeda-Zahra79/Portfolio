@@ -2,9 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-// relative left-[25%]
-
-//justify-evenly items-center
 function SidePanel() {
   return (
     <div className="hidden lg:flex flex-col pt-7 h-[70vh] ">
@@ -32,7 +29,7 @@ function SidePanel() {
             className="-rotate-90 opacity-60 mt-4 2xl:w-8"
           />
         </Link>
-        <Link href="/">
+        <Link href="/hci-2.pdf" target="_blank">
           <Image
             width="20"
             height="25"
