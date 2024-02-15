@@ -3,9 +3,8 @@ import React from "react";
 import ReactPlayer from "react-player";
 
 const VideoPlayer = ({src} :any) => {
-
   return (
-    <div className="w-full drop-shadow-lg">
+    <div className="w-full drop-shadow-lg bg-gray-400">
       <ReactPlayer
         width="w-full"
         height="h-fit"
@@ -17,6 +16,6 @@ const VideoPlayer = ({src} :any) => {
       <source src={src} type="video/mp4" />
     </div>
   );
-};
+}
 
 export default VideoPlayer;

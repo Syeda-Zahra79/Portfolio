@@ -4,7 +4,7 @@ export const projects : ProjectProps[] = [
     {
         id : 1,
         name : "Shopiee",
-        url : '/videos/Shopiee.mp4',
+        url : 'https://cloud.appwrite.io/v1/storage/buckets/65cdb557ba388c1c2572/files/65cddda0b1e5d5b822e5/view?project=65cdb53942bee5c0d1f3&mode=admin',
         shortDescription : "E-commerce Shopping Website offers wide variety of products, where user can buy with seamless and secure experience.",
         techStack : [
             'TS','NextJS','Styled Components', 'Resend'
@@ -16,7 +16,7 @@ export const projects : ProjectProps[] = [
     {
         id : 2,
         name : "Estate Heavens",
-        url : '/videos/EstateHeavens.mp4',
+        url : 'https://cloud.appwrite.io/v1/storage/buckets/65cdb557ba388c1c2572/files/65cdb5e92aacec79a89a/view?project=65cdb53942bee5c0d1f3&mode=admin',
         shortDescription : "Real Estate Listing Website that lists real-time available properties from Realtor API and incorporates Youtube Videos and Google Maps.",
         techStack : [
             'TS','NextJS','TailwindCSS', 'Google Maps', 
@@ -28,7 +28,7 @@ export const projects : ProjectProps[] = [
     {
         id : 3,
         name : "FoundCareer",
-        url : '/videos/FoundCareer.mp4',
+        url : 'https://cloud.appwrite.io/v1/storage/buckets/65cdb557ba388c1c2572/files/65cddd8937ab9c6f3a86/view?project=65cdb53942bee5c0d1f3&mode=admin',
         shortDescription : "Job Viewing Platform that allows to view the jobs from different industry and locations and provides details about those.",
         techStack : [
             'SCSS','AngularJS',"Rapid API", 
@@ -40,7 +40,7 @@ export const projects : ProjectProps[] = [
     {
         id : 4,
         name : "FeedVerse",
-        url : '/videos/FeedVerse.mp4',
+        url : 'https://cloud.appwrite.io/v1/storage/buckets/65cdb557ba388c1c2572/files/65cdb593e5392c4563a8/view?project=65cdb53942bee5c0d1f3&mode=admin',
         shortDescription : "News Website that allows the users to view international news by authenticating using Google or Github.",
         techStack : [
             'NextTJS',"Google OAuth", "Github OAuth"
