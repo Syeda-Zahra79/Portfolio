@@ -4,19 +4,19 @@ import ReactPlayer from "react-player";
 
 const VideoPlayer = ({src} :any) => {
   //video path
-  let videosrc = `/videos/${src}`;
+  // let videosrc = `/videos/${src}`;
 
   return (
     <div className="w-full drop-shadow-lg">
       <ReactPlayer
         width="w-full"
         height="h-fit"
-        url={videosrc}
+        url={src}
         playing={true}
         muted={true}
         loop={true} 
       />
-      <source src={videosrc} type="video/mp4" />
+      <source src={src} type="video/mp4" />
     </div>
   );
 };

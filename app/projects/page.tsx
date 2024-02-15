@@ -6,6 +6,8 @@ import ProjectProps from "@/models/ProjectProps";
 import dynamic from "next/dynamic";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { Suspense } from "react";
+import Loading from "./Loading";
 
 const ProjectCard = dynamic(() => import("@/components/ProjectCard"), {
   ssr: false,
@@ -41,7 +43,9 @@ export default function Projects() {
       <section className="w-[90%] 2xl:w-[70%] 2xl:mx-auto 2xl:ml-[23%] 2xl:pt-[5%] mx-auto lg:ml-0 lg:mr-0 lg:w-[80%] px-1 flex lg:justify-between overflow-y-hidden flex-wrap ">
 
         {projects.map((project: ProjectProps) => (
-          <ProjectCard project={project} />
+          <Suspense fallback={<Loading />}>
+            <ProjectCard project={project} />
+          </Suspense>
         ))}
 
         <Link

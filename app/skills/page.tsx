@@ -71,7 +71,7 @@ export default function page() {
               height={40}
              className="2xl:w-16 2xl:h-auto"
              />
-            <label className="lg:hidden">HTML</label>
+            <label className="lg:hidden">TypeScript</label>
           </div>
 
           <div className="flex justify-center flex-col items-center mx-6 lg:mr-12 lg:ml-0 my-4 ">
