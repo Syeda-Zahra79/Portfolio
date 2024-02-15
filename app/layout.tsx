@@ -3,7 +3,6 @@ import "./globals.css";
 import Header from "@/components/Header";
 import SidePanel from "@/components/SidePanel";
 
-
 export const metadata: Metadata = {
   title: "Bint-e-Zahra",
   description: "Front-end Developer Portoflio",
@@ -51,7 +50,7 @@ export default function RootLayout({
           <div className="w-[100%]  min-h-[100vh] bg_blur z-10">
             <div className="w-[100%] z-10 pb-2">
               <Header />
-              <div className="flex">
+              <div className={`flex`}>
                 {children}
                 <SidePanel />
               </div>

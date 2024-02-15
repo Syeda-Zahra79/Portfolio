@@ -40,7 +40,6 @@ export default function Header() {
         ease: "power4.out",
       },
     );
-    //gsap.fromTo(".move", { y: -500, duration: 2, repeat: -1 });
   }, []);
 
   return (

@@ -29,7 +29,7 @@ function SidePanel() {
             className="-rotate-90 opacity-60 mt-4 2xl:w-8"
           />
         </Link>
-        <Link href="/resume.pdf" target="_blank">
+        <Link href="https://w3bzjqck63rspwr9.public.blob.vercel-storage.com/resume-PEB7SXREzYhTzNjRaEP2NW0Klt7XKX.pdf" target="_blank">
           <Image
             width="20"
             height="25"
