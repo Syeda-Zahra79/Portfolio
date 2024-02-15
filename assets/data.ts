@@ -4,7 +4,7 @@ export const projects : ProjectProps[] = [
     {
         id : 1,
         name : "Shopiee",
-        url : 'https://w3bzjqck63rspwr9.public.blob.vercel-storage.com/shopiee-OvpFYgV9k0SfWQLBHozpBHEDR8BEma.mp4',
+        url : '/videos/Shopiee.mp4',
         shortDescription : "E-commerce Shopping Website offers wide variety of products, where user can buy with seamless and secure experience.",
         techStack : [
             'TS','NextJS','Styled Components', 'Resend'
@@ -16,7 +16,7 @@ export const projects : ProjectProps[] = [
     {
         id : 2,
         name : "Estate Heavens",
-        url : 'https://w3bzjqck63rspwr9.public.blob.vercel-storage.com/EstateHeavens-ALwYzNNm8RXRqIvZHHBf8dJks7ON3z.mp4',
+        url : '/videos/EstateHeavens.mp4',
         shortDescription : "Real Estate Listing Website that lists real-time available properties from Realtor API and incorporates Youtube Videos and Google Maps.",
         techStack : [
             'TS','NextJS','TailwindCSS', 'Google Maps', 
@@ -28,7 +28,7 @@ export const projects : ProjectProps[] = [
     {
         id : 3,
         name : "FoundCareer",
-        url : 'https://w3bzjqck63rspwr9.public.blob.vercel-storage.com/foundCareer-bzc47LAv5k78qqAUXerUrfK8tLjoVH.mp4',
+        url : '/videos/FoundCareer.mp4',
         shortDescription : "Job Viewing Platform that allows to view the jobs from different industry and locations and provides details about those.",
         techStack : [
             'SCSS','AngularJS',"Rapid API", 
@@ -40,7 +40,7 @@ export const projects : ProjectProps[] = [
     {
         id : 4,
         name : "FeedVerse",
-        url : 'https://w3bzjqck63rspwr9.public.blob.vercel-storage.com/FeedVerse-kMlwHmQCRdaaCigG8cgXdVq1TmaCtD.mp4',
+        url : '/videos/FeedVerse.mp4',
         shortDescription : "News Website that allows the users to view international news by authenticating using Google or Github.",
         techStack : [
             'NextTJS',"Google OAuth", "Github OAuth"
