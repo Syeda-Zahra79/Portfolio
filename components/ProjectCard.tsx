@@ -9,7 +9,7 @@ const ProjectCard = ({project} : any) => {
       <Link href={`/projects/${project.name}`}>
       <VideoPlayer src={project.url} />
       <div className="px-5">
-        <h3 className="font-nunito my-2 text-2xl 2xl:text-3xl">{project.name}</h3>
+        <h3 className="font-nunito my-2 text-2xl 2xl:text-3xl overflow-hidden">{project.name}</h3>
         <p className="text-sm 2xl:text-xl">{project.shortDescription}</p>
         <div className="flex w-full gap-1 my-5 flex-wrap lg:flex-nowrap 2xl:gap-2">
           {project.techStack.map((stackItem: string, index: number) => (

@@ -46,7 +46,7 @@ export default function about() {
             <span className="font-semibold">travel</span>.
           </p>
         </div>
-        <Link target="_blank" href={"https://w3bzjqck63rspwr9.public.blob.vercel-storage.com/resume-PEB7SXREzYhTzNjRaEP2NW0Klt7XKX.pdf"} className="lg:text-xl text-[#1f1e1e] text-2xl lg:pl-1">
+        <Link target="_blank" href={"https://cloud.appwrite.io/v1/storage/buckets/65cdb557ba388c1c2572/files/65d81cd371a0ec112279/view?project=65cdb53942bee5c0d1f3&mode=admin"} className="lg:text-xl text-[#1f1e1e] text-2xl lg:pl-1">
           <span className="hover:underline pr-4">Resume</span>
           <span className="text-4xl text-black opacity-70 ">&#8594;</span>
         </Link>

@@ -29,7 +29,7 @@ function SidePanel() {
             className="-rotate-90 opacity-60 mt-4 2xl:w-8"
           />
         </Link>
-        <Link href="https://w3bzjqck63rspwr9.public.blob.vercel-storage.com/resume-PEB7SXREzYhTzNjRaEP2NW0Klt7XKX.pdf" target="_blank">
+        <Link href="https://cloud.appwrite.io/v1/storage/buckets/65cdb557ba388c1c2572/files/65d81cd371a0ec112279/view?project=65cdb53942bee5c0d1f3&mode=admin" target="_blank">
           <Image
             width="20"
             height="25"
